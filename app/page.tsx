@@ -1,3 +1,8 @@
+// Developed by Stiner.dev
+// Professional Web Developer
+// April 22, 2025
+// Contact: https://stiner.dev
+
 import Image from "next/image"
 import Link from "next/link"
 import SiteHeader from "@/components/site-header"

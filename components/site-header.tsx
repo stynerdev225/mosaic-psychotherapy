@@ -1,3 +1,8 @@
+// Developed by Stiner.dev
+// Professional Web Developer
+// April 22, 2025
+// Contact: https://stiner.dev
+
 "use client"
 
 import ScrollLink from "./scroll-link"
@@ -18,7 +23,7 @@ export default function SiteHeader({ currentPage = "" }) {
   }, [])
 
   // Handle navigation with loading state
-  const handleNavigation = (href) => {
+  const handleNavigation = (href: string) => {
     if (pathname !== href) {
       setIsLoading(true)
       // Add a small delay to show loading indicator
@@ -48,9 +53,8 @@ export default function SiteHeader({ currentPage = "" }) {
             <li className="relative">
               <ScrollLink
                 href="/"
-                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${
-                  currentPage === "home" ? "font-medium text-green-700" : ""
-                }`}
+                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${currentPage === "home" ? "font-medium text-green-700" : ""
+                  }`}
                 onClick={() => handleNavigation("/")}
               >
                 Home
@@ -62,9 +66,8 @@ export default function SiteHeader({ currentPage = "" }) {
             <li className="relative">
               <ScrollLink
                 href="/about"
-                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${
-                  currentPage === "about" ? "font-medium text-green-700" : ""
-                }`}
+                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${currentPage === "about" ? "font-medium text-green-700" : ""
+                  }`}
                 onClick={() => handleNavigation("/about")}
               >
                 About Us
@@ -76,9 +79,8 @@ export default function SiteHeader({ currentPage = "" }) {
             <li className="relative">
               <ScrollLink
                 href="/services"
-                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${
-                  currentPage === "services" ? "font-medium text-green-700" : ""
-                }`}
+                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${currentPage === "services" ? "font-medium text-green-700" : ""
+                  }`}
                 onClick={() => handleNavigation("/services")}
               >
                 Services
@@ -90,9 +92,8 @@ export default function SiteHeader({ currentPage = "" }) {
             <li className="relative">
               <ScrollLink
                 href="/faqs"
-                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${
-                  currentPage === "faqs" ? "font-medium text-green-700" : ""
-                }`}
+                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${currentPage === "faqs" ? "font-medium text-green-700" : ""
+                  }`}
                 onClick={() => handleNavigation("/faqs")}
               >
                 FAQs
@@ -104,9 +105,8 @@ export default function SiteHeader({ currentPage = "" }) {
             <li className="relative">
               <ScrollLink
                 href="/contact"
-                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${
-                  currentPage === "contact" ? "font-medium text-green-700" : ""
-                }`}
+                className={`text-gray-800 hover:text-green-700 md:text-lg lg:text-xl ${currentPage === "contact" ? "font-medium text-green-700" : ""
+                  }`}
                 onClick={() => handleNavigation("/contact")}
               >
                 Contact Us

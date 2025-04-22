@@ -1,11 +1,16 @@
+// Developed by Stiner.dev
+// Professional Web Developer
+// April 22, 2025
+// Contact: https://stiner.dev
+
 let userConfig = undefined
 try {
   // try to import ESM first
-  userConfig = await import('./v0-user-next.config.mjs')
+  userConfig = await import('./stiner-dev-user-next.config.mjs')
 } catch (e) {
   try {
     // fallback to CJS import
-    userConfig = await import("./v0-user-next.config");
+    userConfig = await import("./stiner-dev-user-next.config");
   } catch (innerError) {
     // ignore error
   }

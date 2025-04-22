@@ -1,3 +1,8 @@
+// Developed by Stiner.dev
+// Professional Web Developer
+// April 22, 2025
+// Contact: https://stiner.dev
+
 import type React from "react"
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
@@ -20,7 +25,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Mosaic Psychotherapy",
   description: "Virtual evidence-based therapy for adults across California",
-  generator: 'v0.dev'
+  generator: 'Stiner.dev'
 }
 
 export const viewport: Viewport = {
